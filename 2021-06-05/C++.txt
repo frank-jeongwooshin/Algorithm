@@ -1,0 +1,68 @@
+C++ 기본 구조
+
+#include <iostream>  //header file
+
+using namespace std;  // 무조건 있어야함
+
+void main(){
+    cout << "Hello!\n"; // \n대신 <<endl 사용 가능
+    cout << 10 << endl; 
+    cout << 10 << '\n';
+{
+
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+viod main(){
+    cout << 'Hello!\n';  #iostream
+    printf("Hello!\n");  #stdio.h
+}
+
+namespace - 자신만의 유일한 네임스페이스를 만들어 함수나 클래스 등을 작성해야 함
+    - 1. 모든 namespace 이름을 공개하고 사용하는 방법(using namespace A)
+    - 2. 하나의 namespace 이름을 공개하고 사용하는 방법(using A::Print)
+    - 3. 어떤 namespace 이름도 공개하지 않고 사용하는 방법(X)
+
+#include <iostream>
+using namespace std;
+
+namespace A{
+    void Print(){
+        cout << "I AM A Print()!" << endl;
+    }
+
+    void Test(){
+        cout << "Test 1 using A::Print" << endl;
+    }
+}
+
+namespace B{
+    void Print(){
+        cout << "I AM B Print()!" << endl;
+    }
+}
+
+using A::Test;
+void main(){
+    A::Print(); // I AM A Print()!
+    B::Print(); // I AM B Print()!
+    Test();     // Test 1 using A::Print
+}
+## :: - 범위 지정연산자(scope)
+
+using namespace std; - C++표준 라이브러리의 객체나 함수는 std namespace 공간에 들어있음!
+- if 사용하지 않으면 std::cout << ~ 이렇게 사용해야 함.
+
+[초기화]
+int a(10);  // a를 10으로 초기화 - 객체 자료 타입 초기화
+int a = 10; // a를 10으로 초기화 - 기본 자료 타입 초기화
+
+[레퍼런스 Reference]
+& - 주소연산자가 아닌 레퍼런스연산자
+int &r = n;  // 레퍼런스연산자
+int *p = &n; // 주소연산자
+
+ - 1. 같은 자료형 메모리만 레퍼런스함
+ - 2. 초기화 시에만 가능

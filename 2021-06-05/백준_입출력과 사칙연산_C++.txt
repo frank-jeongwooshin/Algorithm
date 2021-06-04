@@ -1,0 +1,152 @@
+[1000번 A+B]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+    cout << a+b << endl;
+}
+
+
+[2557번 Hello World]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "Hello World!" << endl;
+}
+
+
+[10718번 We love kriii]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    for(int i = 0; i < 2; i++){
+        cout << "강한친구 대한육군" << endl;
+    }
+}
+
+
+[10171번 고양이]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "\\    /\\" << endl;
+    cout << " )  ( ')" << endl;
+    cout << "(  /  )" << endl;
+    cout << " \\(__)|" << endl;
+}
+
+
+[10172번 개]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "|\\_/|" << endl;
+    cout << "|q p|   /}" << endl;
+    cout << "( 0 )\"\"\"\\" << endl;
+    cout << "|\"^\"`    |" << endl;
+    cout << "||_/=\\\\__|" << endl;
+}
+
+
+[1001번 A-B]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+    cout << a-b << endl;
+}
+
+
+[10998번 AxB]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+    cout << a*b << endl;
+}
+
+
+[1008번 A/B]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    double a, b;
+    cin >> a >> b;
+
+    cout.precision(15);
+    cout << a/b;
+}
+
+
+[10869번 사칙연산]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+
+    cout << a+b << endl;
+    cout << a-b << endl;
+    cout << a*b << endl;
+    cout << a/b << endl;
+    cout << a%b << endl;
+}
+
+
+[10430번 나머지]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << (a+b)%c << endl;
+    cout << ((a%c) + (b%c))%c << endl;
+    cout << (a*b)%c << endl;
+    cout << ((a%c) * (b%c))%c << endl;
+}
+
+
+[2588번 곱셈]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a;
+    cin >> b;
+
+    int tmp = b%10;
+    cout << a*tmp << endl;
+
+    tmp = (b/10)%10;
+    cout << a*tmp << endl;
+
+    tmp = b/100;
+    cout << a*tmp << endl;
+
+    cout << a*b << endl;
+}
