@@ -1,0 +1,177 @@
+[2739번 구구단]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    for(int i = 1; i < 10; i++){
+        cout << n << " * " << i << " = " << n*i<< endl;
+        
+    }
+}
+
+
+[10950번 A+B - 3]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    for(int i = 0; i < n; i++){
+        int a, b;
+        cin >> a >> b;
+        
+        cout << a+b << endl;
+    }
+}
+
+
+[8393번 합]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int N;
+    
+    cin >> N;
+    int sum = 0;
+    
+    for (int i = 1; i <= N; i++){
+        sum += i;
+    }
+    
+    cout << sum << endl;
+}
+
+
+[15552번 빠른 A+B]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin >> n;
+
+    for(int i = 0; i < n; i++){
+        int a, b;
+        cin >> a >> b;
+        
+        cout << a+b << '\n';
+    }
+}
+
+
+[2741번 N 찍기]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N;
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin >> N;
+    
+    for(int i = 1; i <= N; i++){
+        cout << i << '\n';
+    }    
+    
+    return 0;
+}
+
+
+[2742번 기찎 N]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N;
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin >> N;
+
+    for(int i = N; i >= 1; i--){
+        cout << i << '\n';
+    }
+}
+
+
+[11021번 A+B - 7]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int T;
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin >> T;
+    
+    for (int i = 1; i <= T; i++){
+        int a, b;
+        cin >> a >> b;
+        cout << "Case #" << i << ": " << a+b << '\n';
+    }
+}
+
+
+[11022번 A+B - 8]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int T;
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin >> T;
+    
+    for (int i = 1; i <= T; i++){
+        int a, b;
+        cin >> a >> b;
+        cout << "Case #" << i << ": " << a << " + " << b << " = " << a+b << '\n';
+    }
+}
+
+
+[2438번 별찍기 - 1]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N;
+    cin >> N;
+    
+    for(int i = 1; i<=N; i++){
+        for (int j = 0; j < i; j++){
+            cout << "*";
+        }
+        cout << '\n';
+    }
+}
+
+
+[2439번 별찍기 - 2]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N;
+    cin >> N;
+    
+    for(int i = 1; i<=N; i++){
+        for (int j = 1; j <= N - i; j++){
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++){
+            cout << "*"
+        }
+        cout << '\n';
+    }
+}
