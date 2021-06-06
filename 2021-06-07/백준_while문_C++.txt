@@ -1,0 +1,57 @@
+[10952번 A+B - 5]
+#include <iostream>
+using namespace std;
+
+int main(){
+    while (1){
+        int a, b;
+        cin >> a >> b;
+
+        if (a == 0 && b == 0){
+            break;
+        }
+
+        cout << a + b << '\n';
+    }
+}
+
+
+[10951번 A+B - 4]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a, b;
+
+    while(cin >> a >> b){
+        cout << a + b << '\n';
+    }
+}
+
+
+[1110번 더하기 사이클]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N;
+    cin >> N;
+    int answer = 1;
+    int a, b, tmp;
+    a = N / 10;
+    b = N % 10;
+
+    while (1){
+        if (N == 0) break;
+        tmp = (b*10) + ((a+b)%10);
+        
+        if (N == tmp){
+            break;
+        }
+        a = tmp / 10;
+        b = tmp % 10;
+
+        answer += 1;
+    }
+    cout << answer << '\n';
+}

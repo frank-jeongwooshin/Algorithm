@@ -1,0 +1,192 @@
+[10818번 최소, 최대]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int N, min_num, max_num;
+    cin >> N;
+    min_num = 10000000;
+    max_num = -10000000;
+
+    for (int i = 0; i < N; i++){
+        int tmp;
+        cin >> tmp;
+
+        if(min_num > tmp) min_num = tmp;
+
+        if(max_num < tmp) max_num = tmp;
+    }
+
+    cout << min_num << " " << max_num << '\n';
+}
+
+
+[2562번 최댓값]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 1;
+    int ans = -1;
+
+    for(int j = 1; j < 10; j++){
+        int tmp;
+        cin >> tmp;
+
+        if(ans < tmp){
+            ans = tmp;
+            i = j;
+        }
+    }
+
+    cout << ans << '\n' << i << '\n';
+}
+
+[2577번 숫자의 개수]
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    int ans = a * b * c;
+
+    int num[10] = {0,};
+
+    while(ans !=0){
+        num[ans % 10] += 1;
+        ans /= 10;
+    }
+
+    for(int i = 0; i < 10; i++){
+        cout << num[i] << '\n';
+    }
+}
+
+
+[3052번 나머지]
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main(){
+    list<int> nums;
+
+    for(int i = 0; i < 10; i++){
+        int tmp;
+        cin >> tmp;
+        tmp %= 42;
+        int flag = 0;
+
+        list<int>::iterator iter = nums.begin();
+        for(iter = nums.begin(); iter != nums.end(); iter++){
+            if(*iter == tmp){
+                flag = 1;
+                break;
+            }
+        }
+
+        if(flag == 0) nums.push_back(tmp);
+    }
+
+    cout << nums.size();
+}
+
+
+[1546번 평균]
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main(){
+    int N, max_num = 0;
+    cin >> N;
+    list<int> nums;
+
+    for(int i = 0; i < N; i++){
+        int tmp;
+        cin >> tmp;
+        nums.push_back(tmp);
+        
+        if(tmp > max_num) max_num = tmp;
+    }
+    
+    double sum = 0;
+    list<int>::iterator iter = nums.begin();
+    for(iter = nums.begin(); iter != nums.end(); iter++){
+    	double tmp = *iter;
+        if(max_num == *iter){
+            sum += 100;
+            continue;
+        }
+        tmp = tmp/max_num*100;
+        sum += tmp;
+    }
+
+    cout << sum/N << '\n';
+}
+
+
+[8958번 OX퀴즈]
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    int N;
+    cin >> N;
+
+    for(int i = 0; i < N; i++){
+        string s;
+        cin >> s;
+        int score = 0;
+        int tmp = 1;
+
+        for(int j = 0; j < s.size(); j++){
+            if(s[j] == 'O'){
+                score += tmp;
+                tmp += 1;
+            }else{
+                tmp = 1;
+            }
+        }
+
+        cout << score << '\n';
+    }
+}
+
+
+[4344번 평균은 넘겠지]
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main(){
+    int C;
+    cin >> C;
+    cout << fixed;
+    cout.precision(3);
+
+    for(int i = 0; i < C; i++){
+        int N;
+        cin >> N;
+        list<int> nums;
+        double sum = 0;
+
+        for(int j = 0; j < N; j++){
+            int tmp;
+            cin >> tmp;
+            nums.push_back(tmp);
+            sum += tmp;
+        }
+
+        double avg = sum/N;
+        double up = 0;
+
+        list<int>::iterator iter = nums.begin();
+        for(iter = nums.begin(); iter != nums.end(); iter++){
+            if(*iter > avg) up += 1;
+        }
+        cout << up/N*100 << "%" << endl;
+    }
+}
