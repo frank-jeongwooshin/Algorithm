@@ -1,0 +1,78 @@
+[15596번 정수 N개의 합]
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+long long sum(vector<int> &a){
+    long long hap=0;
+    for(int i = 0; i < a.size(); i++){
+        hap += a[i];
+    }
+
+    return hap;
+}
+
+
+[4673번 셀프 넘버]
+#include <iostream>
+using namespace std;
+
+int d(int n){
+    int res = n;
+    while(n%10 != 0 || n/10 != 0){
+        int tmp;
+        tmp = n%10;
+        res += tmp;
+        n /= 10;
+    }
+    return res;
+}
+
+int main(){
+    int nums[10001];
+    for(int i = 0; i <= 10000; i++){
+        nums[i] = i;
+    }
+
+    for(int i = 1; i <= 10000; i++){
+        if(d(i) <= 10000) nums[d(i)] = 0;
+    }
+
+    for(int i = 1; i <= 10000; i++){
+        if(nums[i] != 0) cout << nums[i] << endl;
+    }
+}
+
+
+[1065번 한수]
+#include <iostream>
+
+using namespace std;
+
+int check(int n){
+    int a, b, c;
+    a = n/100;
+    b = (n-a)/10;
+    c = n % 10;
+    if(b-a == c-b){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+
+int main(){
+    int N;
+    cin >> N;
+    int ans = 99;
+
+    if(N<100){
+        cout << N << endl;
+    }else{
+        for(int i = 111; i <= N; i++){
+            ans += check(i);
+        }
+        cout << N << endl;
+    }
+}
