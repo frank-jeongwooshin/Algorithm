@@ -15,4 +15,13 @@ int main() {
 
 	counter_clock_wise();
 	cout << endl;
+
+	largest_number();
+	cout << endl;
+
+	calc();
+	cout << endl;
+
+	polygon();
+	cout << endl;
 }

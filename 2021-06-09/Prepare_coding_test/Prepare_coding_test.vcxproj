@@ -141,9 +141,12 @@
   <ItemGroup>
     <ClCompile Include="clock_wise.cpp" />
     <ClCompile Include="counter_clock_wise.cpp" />
+    <ClCompile Include="largest_number.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="polygon.cpp" />
     <ClCompile Include="real_number_sort.cpp" />
     <ClCompile Include="transformation_2_8_16.cpp" />
+    <ClCompile Include="transformation_calc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="solution.h" />
