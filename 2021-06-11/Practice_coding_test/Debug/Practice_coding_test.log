@@ -1,0 +1,10 @@
+﻿  base64.cpp
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(19,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(64,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(66,23): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(79,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(102,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(119,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(127,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\base64.cpp(137,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Practice_coding_test.vcxproj -> C:\Users\Frank Shin\Desktop\GIT\Algorithm\2021-06-10\Practice_coding_test\Debug\Practice_coding_test.exe
