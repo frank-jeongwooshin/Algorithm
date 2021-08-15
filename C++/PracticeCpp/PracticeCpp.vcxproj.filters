@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Employee Database">
+      <UniqueIdentifier>{e38f18d5-b3eb-4b45-990b-02c0680c4ee0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,6 +27,15 @@
     <ClCompile Include="c210810.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>헤더 파일\Employee Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Employee.cpp">
+      <Filter>헤더 파일\Employee Database</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>헤더 파일\Employee Database</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c210809.h">
@@ -31,6 +43,15 @@
     </ClInclude>
     <ClInclude Include="c210810.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>헤더 파일\Employee Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>헤더 파일\Employee Database</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>헤더 파일\Employee Database</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

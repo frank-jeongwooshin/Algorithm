@@ -141,11 +141,17 @@
   <ItemGroup>
     <ClCompile Include="c210809.cpp" />
     <ClCompile Include="c210810.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Employee.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c210809.h" />
     <ClInclude Include="c210810.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
