@@ -1,6 +1,6 @@
 #include "c210809.h"
 #include "c210810.h"
-
+#include "c210816.h"
 
 // Employee
 #include "UserInterface.h"
@@ -50,8 +50,12 @@ int main() {
 	//db.displayFormer();
 
 	// Employee Main Test
-	UserInterface UIF;
-	UIF.run();
+	/*UserInterface UIF;
+	UIF.run();*/
+
+	// 2021-08-15
+	c210816 algo;
+	algo.croatiaAlpha_2941();
 
 	return 0;
 }

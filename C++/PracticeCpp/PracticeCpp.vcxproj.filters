@@ -36,6 +36,9 @@
     <ClCompile Include="UserInterface.cpp">
       <Filter>헤더 파일\Employee Database</Filter>
     </ClCompile>
+    <ClCompile Include="c210816.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c210809.h">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="UserInterface.h">
       <Filter>헤더 파일\Employee Database</Filter>
+    </ClInclude>
+    <ClInclude Include="c210816.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
