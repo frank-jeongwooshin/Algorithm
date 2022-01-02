@@ -54,8 +54,8 @@ int main() {
 	UIF.run();*/
 
 	// 2021-08-15
-	c210816 algo;
-	algo.croatiaAlpha_2941();
+	//c210816 algo;
+	//algo.croatiaAlpha_2941();
 
 	return 0;
 }
