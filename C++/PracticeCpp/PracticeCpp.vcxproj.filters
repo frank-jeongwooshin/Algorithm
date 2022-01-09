@@ -51,6 +51,9 @@
     <ClCompile Include="pro_220104.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="pro_220109.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c210809.h">
@@ -78,6 +81,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="pro_220104.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_220109.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
