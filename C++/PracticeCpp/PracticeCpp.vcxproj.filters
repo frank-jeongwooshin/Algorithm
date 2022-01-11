@@ -49,12 +49,15 @@
       <Filter>소스 파일\Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="pro_220104.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="pro_220109.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="pro_220110.cpp">
+      <Filter>소스 파일\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="pro_220111.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,6 +93,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="pro_220110.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_220111.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
