@@ -151,6 +151,7 @@
     <ClCompile Include="pro_220109.cpp" />
     <ClCompile Include="pro_220110.cpp" />
     <ClCompile Include="pro_220111.cpp" />
+    <ClCompile Include="pro_220112.cpp" />
     <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +166,7 @@
     <ClInclude Include="pro_220109.h" />
     <ClInclude Include="pro_220110.h" />
     <ClInclude Include="pro_220111.h" />
+    <ClInclude Include="pro_220112.h" />
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
