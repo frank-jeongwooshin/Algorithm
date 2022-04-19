@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -145,6 +145,7 @@
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pro20220310.cpp" />
     <ClCompile Include="pro_220102.cpp" />
     <ClCompile Include="pro_220103.cpp" />
     <ClCompile Include="pro_220104.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="c210816.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="pro20220310.h" />
     <ClInclude Include="pro_220102.h" />
     <ClInclude Include="pro_220103.h" />
     <ClInclude Include="pro_220104.h" />
